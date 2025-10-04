@@ -1,0 +1,42 @@
+server:
+  port: 8080
+  environment: development
+  read_timeout: 10
+  write_timeout: 10
+  idle_timeout: 120
+
+database:
+  host: localhost
+  port: 5432
+  user: postgres
+  password: postgres
+  dbname: ecommerce
+  sslmode: disable
+
+redis:
+  host: localhost
+  port: 6379
+  password: ""
+  db: 0
+
+jwt:
+  secret: your-secret-key-change-in-production
+  expiry_hours: 24
+
+payment:
+  stripe:
+    secret_key: sk_test_...
+    public_key: pk_test_...
+  bkash:
+    app_key: ""
+    app_secret: ""
+    username: ""
+    password: ""
+
+email:
+  smtp_host: smtp.gmail.com
+  smtp_port: 587
+  smtp_username: ""
+  smtp_password: ""
+  from_email: noreply@ecommerce.com
+  from_name: E-Commerce Platform
