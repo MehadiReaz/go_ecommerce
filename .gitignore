@@ -34,6 +34,9 @@ vendor/
 # OS files
 .DS_Store
 Thumbs.db
+._*
+.AppleDouble
+.LSOverride
 
 # Logs
 *.log
